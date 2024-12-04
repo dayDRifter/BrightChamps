@@ -1,0 +1,192 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #ffffff;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Quiz Container */
+.quiz-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Question */
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Options */
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.options li {
+    margin: 0.5rem 0;
+}
+
+.options button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.options button:hover {
+    background-color: #45a049;
+}
+
+/* Timer */
+.timer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+
+/* Score Container */
+.score-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.score {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.result-message {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* General Buttons */
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+button.primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+button.primary:hover {
+    background-color: #45a049;
+}
+
+button.secondary {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+}
+
+button.secondary:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 1rem;
+    }
+
+    .question {
+        font-size: 1rem;
+    }
+
+    .options button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+.footer {
+    background-color: #4caf50;
+    /* Match the primary color of the app */
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ddd;
+}
